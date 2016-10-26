@@ -23,14 +23,12 @@ function handleEnter (event) {
 
 }
 
-
-
 function reversal(x) {
 	var result = x.split('').reverse().join('');
 
 	var output = document.getElementById('output');
 
-	output.innerHTML += `Reversal: ${result}`;
+	output.innerHTML += `String: ${x} <br> Reversal: ${result}`;
 	return result;
 
 }
@@ -43,7 +41,9 @@ function alphabits(x) {
 	var output = document.getElementById('output');
 	console.log(result);
 
-	// output.innerHTML += `Alphabits: ${result}`;
+	output.innerHTML += `<br> Alphabits: ${result}`;
+	return result;
+
 
 }
 
@@ -51,7 +51,7 @@ function palindrome(x) {
 
 	if (x === reversal(x)) {
 
-		output.innerHTML += `Your string is a palindrome`;
+		output.innerHTML += `<br> Palindrome: Your string is a palindrome`;
 	}
 
 }
